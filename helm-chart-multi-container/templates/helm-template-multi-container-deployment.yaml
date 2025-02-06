@@ -11,10 +11,10 @@ spec:
     spec:
       containers:
       - name: hello-container
-        image: hello:v1
+        image: 'nginx:latest'
         ports:
         - containerPort: {{.Values.helloPort}}
       - name: app2-container
-        image: app2:v1
+        image: 'nginx:latest'
         ports:
         - containerPort: {{.Values.app2Port}}
