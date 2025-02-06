@@ -5,8 +5,8 @@ metadata:
 spec:
   replicas: {{.Values.numReplicas}}
   selector:
-	matchLabels:
-	  app: label-helm-multi-containers-deployment
+     matchLabels:
+        app: label-helm-multi-containers-deployment
   template:
     metadata:
       labels:
