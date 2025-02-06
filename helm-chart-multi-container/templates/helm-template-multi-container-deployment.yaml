@@ -4,6 +4,9 @@ metadata:
   name: help-multi-containers-deployment
 spec:
   replicas: {{.Values.numReplicas}}
+  selector:
+	matchLabels:
+	  app: label-helm-multi-containers-deployment
   template:
     metadata:
       labels:
